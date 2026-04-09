@@ -1,0 +1,52 @@
+[
+  {
+    "id": "greetings",
+    "name": "Greetings",
+    "icon": "👋"
+  },
+  {
+    "id": "home",
+    "name": "Home",
+    "icon": "🏠"
+  },
+  {
+    "id": "food",
+    "name": "Food & Drink",
+    "icon": "🍎"
+  },
+  {
+    "id": "supermarket",
+    "name": "Supermarket",
+    "icon": "🛒"
+  },
+  {
+    "id": "university",
+    "name": "University",
+    "icon": "🎓"
+  },
+  {
+    "id": "transport",
+    "name": "Transport",
+    "icon": "🚌"
+  },
+  {
+    "id": "phone",
+    "name": "Phone & Comms",
+    "icon": "📱"
+  },
+  {
+    "id": "time_dates",
+    "name": "Time & Dates",
+    "icon": "🕒"
+  },
+  {
+    "id": "numbers",
+    "name": "Numbers",
+    "icon": "🔢"
+  },
+  {
+    "id": "health",
+    "name": "Health",
+    "icon": "🏥"
+  }
+]
