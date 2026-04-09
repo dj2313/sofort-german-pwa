@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🇩🇪 Sofort German - AI Vocabulary PWA
 
-## Getting Started
+![Sofort German Banner](./public/banner.png)
 
-First, run the development server:
+### **Transform your German learning experience with AI-powered "Immediate" (Sofort) immersion.**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Sofort German** is a high-performance, offline-first Progressive Web App (PWA) designed for serious learners who want to bridge the gap between textbook vocabulary and natural fluency. Using **Groq-powered Llama 3.3 Intelligence**, it scans your textbooks and turns them into interactive training sessions instantly.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🧠 **AI-Powered PDF Scanner**
+*   **Coordinate-Precise Detection**: Automatically reconstructs multi-column textbook layouts with surgical precision.
+*   **Groq AI Boost**: Uses **Llama 3.3 (70B)** to intelligently clean scrambled text, handle articles, and ignore exercise noise.
+*   **No Copy-Paste**: Just upload your PDF and start training in seconds.
 
-## Learn More
+### 🎧 **Shadow Listening Engine**
+*   **Ear Training**: Adjustable intervals and text-hiding mode to force your brain to recognize spoken German patterns.
+*   **Difficulty Filtering**: Focus your sessions on A1, A2, or your custom Imported vocabulary.
+*   **Seamless Playback**: Built on the Web Speech API for low-latency, crystal-clear pronunciation.
 
-To learn more about Next.js, take a look at the following resources:
+### 🗣️ **Active Pronunciation Check**
+*   **Live Recognition**: Real-time validation of your speech patterns using advanced browser STT.
+*   **Instant Feedback**: Visual cues to let you know if your pronunciation is native-level or needs work.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 📱 **PWA & Offline-First**
+*   **IndexedDB Sync**: All your vocabulary stays on your device. No cloud needed (except for the AI Boost).
+*   **Installable**: Install it on your Home Screen for a native mobile experience.
+*   **Glassmorphic Design**: A premium, sharp-yellow and deep-black aesthetic optimized for focus and night study.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🛠️ Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+*   **Core**: [Next.js 14/15](https://nextjs.org/) (App Router)
+*   **Intelligence**: [Groq SDK](https://groq.com/) (Llama-3.3-70b-versatile)
+*   **Database**: [Dexie.js](https://dexie.org/) (IndexedDB Wrapper)
+*   **Parser**: [pdfjs-dist](https://github.com/mozilla/pdf.js)
+*   **Icons**: [Lucide React](https://lucide.dev/)
+*   **Animations**: Framer Motion & CSS Micro-animations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## ⚙️ Quick Start
+
+1. **Clone & Install**
+   ```bash
+   git clone https://github.com/dj2313/sofort-german-pwa.git
+   cd sofort-german-pwa
+   npm install
+   ```
+
+2. **Set Environment Variables**
+   Create a `.env` file in the root:
+   ```env
+   GROQ_API_KEY=your_key_here
+   ```
+
+3. **Run Locally**
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 🌐 Deployment
+
+Perfectly optimized for **Vercel**.
+1. Import the repository.
+2. Add your `GROQ_API_KEY` to the environment variables.
+3. Deploy!
+
+---
+
+## 📜 License
+MIT - Created by [dj2313](https://github.com/dj2313)
+
+---
+
+### *Master German. Sofort.*
