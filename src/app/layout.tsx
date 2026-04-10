@@ -1,7 +1,8 @@
+
 import type { Metadata, Viewport } from "next";
 import { Syne, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
-import { Providers } from "@/components/Providers";
+import { ClientProviders } from '@/components/ClientProviders';
 
 const syne = Syne({
   subsets: ["latin"],
@@ -46,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${syne.variable} ${plexMono.variable}`}>
-        <Providers>{children}</Providers>
+        <ClientProviders>{children}</ClientProviders>
       </body>
     </html>
   );

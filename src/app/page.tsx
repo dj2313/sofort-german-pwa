@@ -80,7 +80,7 @@ export default function Home() {
         <div>
           <h2 style={{ fontSize: '1.2rem', marginBottom: '16px', color: 'var(--text-secondary)' }}>Modes</h2>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
-            <ModeTile href="/situations" icon={<Grid size={24} />} title="Situations" />
+            <ModeTile href="/cefr" icon={<Grid size={24} />} title="CEFR Progress" />
             <ModeTile href="/build" icon={<MessageSquare size={24} />} title="Sentence Builder" />
             <ModeTile href="/shadow" icon={<Headphones size={24} />} title="Shadow Listen" />
             <ModeTile href="/pronounce" icon={<Mic size={24} />} title="Pronunciation" />

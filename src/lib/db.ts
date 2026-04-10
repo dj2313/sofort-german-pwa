@@ -15,13 +15,21 @@ export interface VocabEntry {
   reviewScore?: number;
 }
 
+export interface LevelProgress {
+  level: string; // e.g., 'A1'
+  skill: string; // 'speaking' | 'listening' | 'reading' | 'writing'
+  completed: number;
+  total: number;
+}
+
 export class SofortDatabase extends Dexie {
   vocab!: Table<VocabEntry, string>;
-
+  levelProgress!: Table<LevelProgress, [string, string]>;
   constructor() {
     super('sofort_db');
-    this.version(1).stores({
-      vocab: 'id, german, english, situation, source, level'
+    this.version(2).stores({
+      vocab: 'id, german, english, situation, source, level',
+      levelProgress: 'level,skill'
     });
   }
 }

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "a1_001",
+    "german": "Haus",
+    "article": "das",
+    "plural": "Häuser",
+    "english": "house",
+    "exampleDe": "Das Haus ist groß.",
+    "exampleEn": "The house is big.",
+    "source": "builtin_a1",
+    "level": "A1",
+    "addedAt": "2022-01-01T00:00:00Z"
+  }
+]

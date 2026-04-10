@@ -1,0 +1,14 @@
+[
+  {
+    "id": "a2_001",
+    "german": "Buch",
+    "article": "das",
+    "plural": "Bücher",
+    "english": "book",
+    "exampleDe": "Ich lese ein Buch.",
+    "exampleEn": "I am reading a book.",
+    "source": "builtin_a2",
+    "level": "A2",
+    "addedAt": "2022-01-02T00:00:00Z"
+  }
+]

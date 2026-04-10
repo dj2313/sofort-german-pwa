@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { seedDatabase } from '@/lib/seed';
+import { CefrProgressProvider } from '@/features/cefr_progress/provider';
 
 export function Providers({ children }: { children: React.ReactNode }) {
   const [isReady, setIsReady] = useState(false);
@@ -16,5 +17,5 @@ export function Providers({ children }: { children: React.ReactNode }) {
     return <div className="loading-state">Initializing Sofort...</div>;
   }
 
-  return <>{children}</>;
+  return <CefrProgressProvider>{children}</CefrProgressProvider>;
 }
